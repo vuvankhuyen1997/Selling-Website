@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DLLT Form</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="DLLT Form" />
+	<meta name="keywords"    content="Forms, Course, IT, Registration" />
+	<meta name="author"      content="Dung Lai Lap Trinh" />
+	<script src="register.js"></script>
+</head>
+
+<body>
+	<h1>Vaasa Fruit Store</h1>
+	<h2>Customer Information</h2>
+
+	<form id="registerForm" method="post" action="confirm.html">
+		<fieldset>
+			<legend>Personal Information</legend>
+			<p><label for="firstname">Enter your First Name: </label>
+			<input type="text" id="firstname" name="firstname" pattern="^[A-Z a-z]{1-30}$" /></p>
+
+			<p><label for="lastname">Enter your Last Name: </label>
+			<input type="text" id="lastname" name="lastname" pattern="^[A-Z a-z]{1-30}$" /></p>
+
+			<p><label for="email">Enter your Email: </label>
+			<input type="text" id="email" name="email" pattern="^[A-Za-z0-9]*@[A-Za-z.]*$" /></p>
+
+			<p><label for="phonenumber">Enter your Phone Number: </label>
+			<input type="text" id="phonenumber" name="phonenumber" pattern="^(\+358|0)\d{9,10}$" /></p>
+
+			<p><label for="age">Enter your Age: </label>
+			<input type="text" id="age" name="age" pattern="^((((\d)|(\d\d)|(1[1-4]\d)))|(150))$" /></p>
+		</fieldset>
+
+		<br/>
+		<fieldset id="radio_occupation">
+			<legend>Select Your Area</legend>
+			<label for="highschool">Northside</label>
+			<input type="radio" name="occupation" id="highschool" value="Northside" /><br/>
+
+			<label for="university">Westside</label>
+			<input type="radio" name="occupation" id="university" value="Westside" /><br/>
+
+			<label for="working">Southside</label>
+			<input type="radio" name="occupation" id="working" value="Southside" /><br/>
+
+			<label for="retired">Eastside</label>
+			<input type="radio" name="occupation" id="retired" value="Eastside" /><br/>
+		</fieldset>
+
+		<br/>
+		<fieldset>
+			<legend>Select Fruit (/kg)</legend>
+			<label for="logicmath">Strawberry - 8e </label>
+			<input type="checkbox" name="logicmath" id="logicmath" value="Strawberry" /><br />
+
+			<label for="python">Blueberry - 7e</label>
+			<input type="checkbox" name="python" id="python" value="Blueberry" /><br />
+
+			<label for="web">Yellowberry - 10e</label>
+			<input type="checkbox" name="web" id="web" value="Yellowberry" /><br />
+
+			<label for="game">Grapes - 5e</label>
+			<input type="checkbox" name="game" id="game" value="Grapes" /><br />
+
+			<label for="datascience">Kiwi - 4e</label>
+			<input type="checkbox" name="datascience" id="datascience" value="Kiwi" /><br />
+
+			<label for="ai">Vegetable - 3e</label>
+			<input type="checkbox" name="ai" id="ai" value="Vegetable" /><br />
+		</fieldset>
+
+		<br/>
+		<label for="payment">Payment method</label>
+		<select name="payment" id="payment">
+			<option value="none">Please select</option>
+			<option value="paypal">Paypal</option>
+			<option value="creditcard">Credit Card</option>
+		</select>
+
+		<br/>
+		<br/>
+		<input type="submit" value="Register Now"/>
+		<input type="reset" value="Reset"/>
+	</form>
+
+</body>
+</html>
